@@ -1,0 +1,145 @@
+.about {
+  width: 100%;
+  min-height: 75vh;
+  display: flex;
+  flex: 1 1 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background: var(--secon-bg-color);
+}
+.aboutFirst {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+}
+.imgAbout {
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.imgAbout img {
+  width: 400px;
+  height: auto;
+}
+.aboutContent {
+  max-width: 500px;
+  align-self: center;
+}
+
+.aboutContent h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.aboutContent p {
+  color: #fdfdfd;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.infoAbout1,
+.infoAbout2,
+.infoAbout3 {
+  background-color: var(--bg-color);
+  font-size: 0.5rem;
+  position: absolute;
+  padding: 10px;
+  width: 90px;
+  height: 90px;
+  border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+  display: block;
+  box-shadow: var(--neon-box-shadow);
+  border: 1px solid var(--hover-color);
+  outline: 2px solid var(--bg-color);
+  z-index: 100;
+  animation: morph 6s linear infinite;
+}
+
+.infoAbout1 {
+  left: -10%;
+  top: 34%;
+}
+.infoAbout2 {
+  right: -5%;
+  top: 0%;
+}
+.infoAbout3 {
+  right: 5%;
+  top: 70%;
+}
+
+.imgAbout span {
+  margin-top: 20px;
+  color: var(--hover-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.imgAbout p {
+  color: var(--text-color);
+  font-size: 0.6rem;
+  /*  font-weight: 600; */
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  background-color: var(--hover-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  transition: 0.6s;
+  box-shadow: var(--neon-box-shadow);
+  border-radius: 5px;
+  z-index: 1;
+  border: 1px solid var(--hover-color);
+}
+
+.btn a:hover {
+  background-color: var(--bg-color);
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+
+/* ---------------------- keyframes ---------------------------------- */
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  30% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  60% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+  80% {
+    border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+  }
+}
+
+@media (max-width: 991px) {
+  .about {
+    padding: 40px 0px;
+    height: auto;
+  }
+}

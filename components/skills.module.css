@@ -1,0 +1,164 @@
+.skills {
+  background: var(--secon-bg-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skillMain {
+  display: flex;
+  flex: 1 1 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.mainText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+}
+.skillBar {
+  margin-bottom: 2.3rem;
+}
+
+.skillMain h3 {
+  margin-bottom: 2rem;
+  font-size: var(--normal-font);
+  text-align: center;
+}
+.skillLeft {
+  width: 500px;
+  padding-bottom: 100px;
+}
+.skillLeft .skillBar .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillLeft .skillBar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--bg-color);
+  border-radius: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.skillBar .bar span {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--hover-color);
+  border-radius: 25px;
+  box-shadow: var(--neon-box-shadow);
+}
+.skillBar .bar .html {
+  width: 72%;
+  animation: html 2s;
+}
+.skillBar .bar .javaScript {
+  width: 80%;
+  animation: javaScript 2s;
+}
+.skillBar .bar .typeScript {
+  width: 75%;
+  animation: typeScript 2s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 72%;
+  }
+}
+@keyframes javaScript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes typeScript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@media (max-width: 991px) {
+  .skillLeft {
+    max-width: 20rem;
+  }
+}
+
+/* skill right ----------------------------- */
+/* .professional {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box {
+  margin: 10px 0;
+  flex: 1 1 15rem;
+  position: relative;
+}
+.box .text {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+.box .text big {
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  font-size: 1rem;
+  top: 42%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+.box .text small {
+  display: block;
+  font-weight: 600;
+}
+.circle {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+}
+.circle .points {
+  width: 2px;
+  height: 10px;
+  background-color: var(--bg-color);
+  position: absolute;
+  border-radius: 3px;
+  transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+}
+
+.marked {
+  animation: glow 0.04s linear forwards;
+  animation-delay: calc(var(--i) * 0.05s);
+}
+@keyframes glow {
+  0% {
+    background: var(--bg-color);
+    box-shadow: none;
+  }
+  100% {
+    background: var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+  }
+} */
