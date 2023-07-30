@@ -1,84 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import style from "./portfolio.module.css";
-import Image from "next/image";
+import { portfolioItem } from "@/data/portfolioData";
 
 function Portfolio() {
   const [test, setTest] = useState();
-  const portfolioItem = [
-    {
-      id: "0001",
-      img: "/Timmer.png",
-      h3: "Interval app",
-      p: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi totam fugit dolor magni odio? Vel, fuga adipisci.",
-      link: "https://www.figma.com/proto/cInyPnU8of5TBBjehQYq87/Inl%C3%A4mning---Figma?node-id=35-4&starting-point-node-id=35%3A4",
-      icon: "/github.png",
-      value: "full",
-    },
-    {
-      id: "0002",
-      img: "/Ticket.png",
-      h3: "Ticket app",
-      p: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi totam fugit dolor magni odio? Vel, fuga adipisci.",
-      link: "https://www.figma.com/proto/cInyPnU8of5TBBjehQYq87/Inl%C3%A4mning---Figma?node-id=35-4&starting-point-node-id=35%3A4",
-      icon: "/github.png",
-      value: "front",
-    },
-    {
-      id: "0003",
-      img: "/EcoFigma.png",
-      h3: "EcoBeauty Design",
-      p: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi totam fugit dolor magni odio? Vel, fuga adipisci.",
-      link: "https://www.figma.com/proto/cInyPnU8of5TBBjehQYq87/Inl%C3%A4mning---Figma?node-id=35-4&starting-point-node-id=35%3A4",
-      icon: "/figma.png",
-      value: "ui",
-    },
-    {
-      id: "0004",
-      img: "/UX.png",
-      h3: "UI and UX",
-      p: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi totam fugit dolor magni odio? Vel, fuga adipisci.",
-      link: "https://www.figma.com/proto/5LaKmlnpaaJmy0XbzbEKeS/UX?node-id=28-2&starting-point-node-id=28%3A2",
-      icon: "/figma.png",
-      value: "ui",
-    },
-    {
-      id: "0005",
-      img: "/Wedding.jpg",
-      h3: "Wedding photographer",
-      p: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi totam fugit dolor magni odio? Vel, fuga adipisci.",
-      link: "https://www.figma.com/proto/cInyPnU8of5TBBjehQYq87/Inl%C3%A4mning---Figma?node-id=35-4&starting-point-node-id=35%3A4",
-      icon: "/github.png",
-      value: "full",
-    },
-    {
-      id: "0006",
-      img: "/gatsby.png",
-      h3: "Prototype WebSite Gatsby",
-      p: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi totam fugit dolor magni odio? Vel, fuga adipisci.",
-      link: "https://www.figma.com/proto/cInyPnU8of5TBBjehQYq87/Inl%C3%A4mning---Figma?node-id=35-4&starting-point-node-id=35%3A4",
-      icon: "/github.png",
-      value: "one",
-    },
-    {
-      id: "0007",
-      img: "/next.png",
-      h3: "Prototype WebSite Next and Strapi",
-      p: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi totam fugit dolor magni odio? Vel, fuga adipisci.",
-      link: "https://www.figma.com/proto/cInyPnU8of5TBBjehQYq87/Inl%C3%A4mning---Figma?node-id=35-4&starting-point-node-id=35%3A4",
-      icon: "/github.png",
-      value: "two",
-    },
-    {
-      id: "0008",
-      img: "/imageCV.png",
-      h3: "Graphic Design",
-      p: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi totam fugit dolor magni odio? Vel, fuga adipisci.",
-      link: "https://www.figma.com/proto/cInyPnU8of5TBBjehQYq87/Inl%C3%A4mning---Figma?node-id=35-4&starting-point-node-id=35%3A4",
-      icon: "/github.png",
-      value: "two",
-    },
-  ];
+
   const data = portfolioItem.filter((item) => {
     if (item.value === test) {
       return item;
@@ -127,7 +54,7 @@ function Portfolio() {
           {data.map((item) => (
             <div className={style.portBox} key={item.id}>
               <div className={style.portImage}>
-                <Image
+                <img
                   src={item.img}
                   width="300"
                   height="300"
@@ -138,7 +65,12 @@ function Portfolio() {
                 <h3>{item.h3}</h3>
                 <p>{item.p}</p>
                 <a href={item.link}>
-                  <Image src={item.icon} width="800" height="45" />
+                  <img
+                    src={item.icon}
+                    /*  width="800"
+                    height="45" */
+                    alt="project img"
+                  />
                 </a>
               </div>
             </div>

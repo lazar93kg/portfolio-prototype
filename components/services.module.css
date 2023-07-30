@@ -35,6 +35,9 @@
   align-items: center;
   justify-content: center;
 }
+.serviceBox p strong {
+  font-size: 1rem;
+}
 .serviceBox:hover {
   transform: translateY(-0.7rem);
 }
@@ -42,9 +45,13 @@
   width: auto;
   justify-content: center;
 }
+.btn a:hover,
+.btn:hover {
+  color: var(--hover-color);
+}
 
 .serviceIcon {
-  width: 0px;
+  /*  width: 0px; */
   border: 2px solid var(--hover-color);
   padding: 2rem;
   background: var(--bg-color);

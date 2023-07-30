@@ -12,7 +12,7 @@
   flex: 1 1 1;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 5rem;
 }
 .mainText {
@@ -60,7 +60,6 @@
   box-shadow: var(--neon-box-shadow);
 }
 .skillBar .bar .html {
-  width: 72%;
   animation: html 2s;
 }
 .skillBar .bar .javaScript {

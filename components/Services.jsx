@@ -1,7 +1,14 @@
 import React from "react";
 import style from "./services.module.css";
+import { UI, frontEnd, fullStack } from "@/data/servicesData";
 
 function Services() {
+  const strongCSS = { color: "#d8d8d8", fontSize: "1rem", fontWeight: "bold" };
+  const btn = (
+    <div className={style.btn} id="btn">
+      <a href="#contact">Contact me</a>
+    </div>
+  );
   return (
     <section className={style.services} id="services">
       <div className={style.mainText}>
@@ -11,45 +18,67 @@ function Services() {
       <div className={style.sectionServices}>
         <div className={style.serviceBox}>
           <div className={style.serviceIcon}>
-            <img src="" alt="" />
+            <img
+              src="/fullStack.png"
+              width="50px"
+              height="50px"
+              alt="Full Stack icon"
+            />
           </div>
-          <h3>Front-End Develop</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem dignissimos voluptates recusandae eius numquam
-            doloremque odio alias, dolorum eum dolor!
-          </p>
-          <div className={style.btn} id="btn">
-            <a href="">Read More</a>
+          {fullStack &&
+            fullStack.map((service) => (
+              <>
+                <h3>{service.title}</h3>
+                <p>
+                  <strong style={strongCSS}>{service.sub}</strong>
+                  {service.description}
+                  <br />
+                </p>
+              </>
+            ))}
+          {btn}
+        </div>
+
+        <div className={style.serviceBox}>
+          <div className={style.serviceIcon}>
+            <img
+              src="/frontEnd.png"
+              width="50px"
+              height="50px"
+              alt="Front End icon"
+            />
           </div>
+          {frontEnd &&
+            frontEnd.map((service) => (
+              <>
+                <h3>{service.title}</h3>
+                <p>
+                  <strong style={strongCSS}>{service.sub}</strong>
+                  {service.description}
+                  <br />
+                </p>
+              </>
+            ))}
+          {btn}
         </div>
         <div className={style.serviceBox}>
           <div className={style.serviceIcon}>
-            <img src="" alt="" />
+            <img src="/UI.png" alt="UI/UX icon" width="50px" height="50px" />
           </div>
-          <h3>Front-End Develop</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem dignissimos voluptates recusandae eius numquam
-            doloremque odio alias, dolorum eum dolor!
-          </p>
-          <div className="btn" id="btn">
-            <a href="">Read More</a>
+          <div>
+            {UI &&
+              UI.map((service) => (
+                <>
+                  <h3>{service.title}</h3>
+                  <p>
+                    <strong style={strongCSS}>{service.sub}</strong>
+                    {service.description}
+                    <br />
+                  </p>
+                </>
+              ))}
           </div>
-        </div>
-        <div className={style.serviceBox}>
-          <div className={style.serviceIcon}>
-            <img src="" alt="" width="30px" />
-          </div>
-          <h3>Front-End Develop</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem dignissimos voluptates recusandae eius numquam
-            doloremque odio alias, dolorum eum dolor!
-          </p>
-          <div className="btn" id="btn">
-            <a href="">Read More</a>
-          </div>
+          {btn}
         </div>
       </div>
     </section>
