@@ -147,3 +147,15 @@
     font-size: 0.8rem;
   }
 }
+@media (max-width: 991px) {
+  .home {
+    gap: 0px;
+    margin-top: 10px;
+  }
+  .homeImage {
+    height: 465px;
+  }
+  .imgBox {
+    max-width: 300px;
+  }
+}

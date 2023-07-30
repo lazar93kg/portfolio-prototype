@@ -31,10 +31,10 @@
 }
 .portfolioGallery {
   display: flex;
-  max-width: 1920px;
-  flex: 1 1 1;
+  max-width: 1640px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 .portBox {
