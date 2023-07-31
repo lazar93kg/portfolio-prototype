@@ -24,6 +24,7 @@
 }
 
 .serviceBox {
+  min-height: 620px;
   flex: 1 1 18rem;
   padding: 2rem 1rem 2rem;
   text-align: center;

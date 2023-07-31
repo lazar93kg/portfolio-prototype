@@ -77,7 +77,6 @@
 }
 .portContent:hover {
   opacity: 1;
-  cursor: pointer;
 }
 .portBox:hover .portImage img {
   transform: scale(1.1);
