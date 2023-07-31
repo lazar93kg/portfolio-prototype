@@ -21,4 +21,3 @@ Visit the live portfolio website: [Link to Portfolio](https://portfolio-lazar-je
 - Next.js: The framework of choice for a fast and SEO-friendly web application.
 - CSS: Handcrafted CSS for fine-tuning the website's style and responsiveness.
 - Vercel: Deployed and hosted on Vercel for a seamless and lightning-fast user experience.
-
