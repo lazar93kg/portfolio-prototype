@@ -33,6 +33,17 @@ function HomeSection() {
             experiences. Join me on this exciting journey as we bring your
             digital vision to life.
           </p>
+          <div className={styles.homeImage} id={styles.imgMobile}>
+            <div className={styles.imgBox}>
+              <Image
+                src="/imageCV.png"
+                width="300"
+                height="300"
+                alt="profile image"
+              />
+            </div>
+            <Liquid />
+          </div>
           <div className={styles.infoBox}>
             <div className={styles.emailInfo}>
               <h5>Email:</h5>
@@ -53,12 +64,9 @@ function HomeSection() {
               Hire Me Now!
             </Link>
           </div>
-          <div className={styles.social}>
-            <a href="#">{/*  <Social /> */}</a>
-          </div>
         </div>
       </div>
-      <div className={styles.homeImage}>
+      <div className={styles.homeImage} id={styles.imgDesk}>
         <div className={styles.imgBox}>
           <Image
             src="/imageCV.png"

@@ -117,7 +117,9 @@
   max-width: 350px;
   height: auto;
 }
-
+#imgMobile {
+  display: none;
+}
 @media (max-width: 991px) {
   .homeContent {
     width: 500px;
@@ -171,5 +173,11 @@
   }
   .changeText p {
     font-size: 0.8rem;
+  }
+  #imgMobile {
+    display: flex;
+  }
+  #imgDesk {
+    display: none;
   }
 }

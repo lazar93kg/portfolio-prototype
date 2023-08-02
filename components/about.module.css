@@ -112,16 +112,27 @@
     text-align: center;
   }
   .imgAbout img {
-    width: 300px;
+    width: 270px;
     height: auto;
   }
   .infoAbout1,
   .infoAbout2,
   .infoAbout3 {
-    width: 70px;
+    width: 60px;
     height: 70px;
   }
   .aboutContent {
     max-width: 380px;
   }
+  .aboutContent h3 {
+    font-size: 1rem;
+  }
+  .aboutContent p {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  /* .infoAbout1 {
+    left: -5%;
+    top: 30%;
+  } */
 }
