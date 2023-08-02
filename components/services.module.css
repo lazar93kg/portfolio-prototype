@@ -52,7 +52,6 @@
 }
 
 .serviceIcon {
-  /*  width: 0px; */
   border: 2px solid var(--hover-color);
   padding: 2rem;
   background: var(--bg-color);
@@ -76,4 +75,13 @@
   letter-spacing: 1px;
   color: #bdbdbd;
   line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+  .serviceBox h3 {
+    font-size: 1rem;
+  }
+  .serviceBox p {
+    font-size: 0.8rem;
+  }
 }

@@ -101,3 +101,8 @@
   border: 1px solid var(--hover-color);
   outline: 2px solid #fff;
 }
+@media (max-width: 991px) {
+  .portBox {
+    margin: 10px;
+  }
+}

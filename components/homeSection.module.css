@@ -153,9 +153,23 @@
     margin-top: 10px;
   }
   .homeImage {
-    height: 465px;
+    height: 360px;
+    width: 350px;
   }
   .imgBox {
-    max-width: 300px;
+    max-width: 250px;
+  }
+  .homeContent h1 {
+    font-size: 1.4rem;
+  }
+  .homeContent h1 {
+    font-size: 1.4rem;
+  }
+  .homeContent h3,
+  .writerText span {
+    font-size: 1rem;
+  }
+  .changeText p {
+    font-size: 0.8rem;
   }
 }

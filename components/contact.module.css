@@ -36,6 +36,10 @@
 }
 
 @media (max-width: 991px) {
+  .contact form input,
+  .contact form textarea {
+    width: 90%;
+  }
   .contact form {
     text-align: center;
     max-width: 20rem;

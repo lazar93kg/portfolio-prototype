@@ -97,7 +97,7 @@
 
 @media (max-width: 991px) {
   .skills {
-    height: 160vh;
+    height: auto;
   }
   .skillLeft {
     max-width: 20rem;
