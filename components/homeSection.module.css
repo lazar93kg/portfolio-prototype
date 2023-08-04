@@ -152,7 +152,6 @@
 @media (max-width: 991px) {
   .home {
     gap: 0px;
-    margin-top: 10px;
   }
   .homeImage {
     height: 360px;
