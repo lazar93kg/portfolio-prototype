@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 function About() {
+  const strongCss = { fontWeight: "600" };
   return (
     <section className={styles.about} id="about">
       <div className={styles.imgAbout}>
@@ -45,11 +46,9 @@ function About() {
           <br />
           During my academic years, I immersed myself in a diverse array of
           programming languages, from the essentials like{" "}
-          <strong style={{ fontWeight: "600" }}>
-            HTML, CSS, and JavaScript
-          </strong>{" "}
-          to cutting-edge technologies such as{" "}
-          <strong style={{ fontWeight: "600" }}>
+          <strong style={strongCss}>HTML, CSS, and JavaScript</strong> to
+          cutting-edge technologies such as{" "}
+          <strong style={strongCss}>
             TypeScript, Node, React, MongoDB, Firebase
           </strong>
           , and responsive design principles. This well-rounded education has
@@ -66,14 +65,14 @@ function About() {
           <br />
           During my time at Devinova AB, we leveraged an exciting tech stack,
           including{" "}
-          <strong style={{ fontWeight: "600" }}>
+          <strong style={strongCss}>
             Gatsby, Next, Theme-UI, Strapi, and GraphQL{" "}
           </strong>
           , skillfully deploying our creations on platforms like{" "}
-          <strong style={{ fontWeight: "600" }}>Heroku and Vercel</strong>. This
-          invaluable experience not only strengthened my technical abilities but
-          also instilled in me the value of effective teamwork and adaptability
-          in the fast-paced tech industry.
+          <strong style={strongCss}>Heroku and Vercel</strong>. This invaluable
+          experience not only strengthened my technical abilities but also
+          instilled in me the value of effective teamwork and adaptability in
+          the fast-paced tech industry.
         </p>
       </div>
     </section>
