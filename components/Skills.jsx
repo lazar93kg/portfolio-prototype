@@ -4,9 +4,10 @@ import style from "./skills.module.css";
 import { backend, library, frontEnd } from "@/data/skillsData";
 
 function Skills() {
+  const divCss = { display: "flex", justifyContent: "space-between" };
   return (
     <section className={style.skills} id="skills">
-      <div className={style.mainText}>
+      <div className={style.mainText} id="divFlex">
         <span id="titleSpan">technical and professional</span>
         <h2 id="titleH2">My Skills</h2>
       </div>
@@ -16,12 +17,7 @@ function Skills() {
           {frontEnd &&
             frontEnd.map((skill) => (
               <div key={skill.id}>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                  }}
-                >
+                <div style={divCss}>
                   <p>{skill.technicalSkills}</p>
                   <p>{skill.percentage}</p>
                 </div>
@@ -42,12 +38,7 @@ function Skills() {
             {library &&
               library.map((skill) => (
                 <div key={skill.id}>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                    }}
-                  >
+                  <div style={divCss}>
                     <p>{skill.technicalSkills}</p>
                     <p>{skill.percentage}</p>
                   </div>
@@ -68,12 +59,7 @@ function Skills() {
               {backend &&
                 backend.map((skill) => (
                   <div key={skill.id}>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
+                    <div style={divCss}>
                       <p>{skill.technicalSkills}</p>
                       <p>{skill.percentage}</p>
                     </div>

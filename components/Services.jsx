@@ -27,14 +27,14 @@ function Services() {
           </div>
           {fullStack &&
             fullStack.map((service) => (
-              <>
+              <div key={service.id}>
                 <h3>{service.title}</h3>
                 <p>
                   <strong style={strongCSS}>{service.sub}</strong>
                   {service.description}
                   <br />
                 </p>
-              </>
+              </div>
             ))}
           {btn}
         </div>
@@ -50,14 +50,14 @@ function Services() {
           </div>
           {frontEnd &&
             frontEnd.map((service) => (
-              <>
+              <div key={service.id}>
                 <h3>{service.title}</h3>
                 <p>
                   <strong style={strongCSS}>{service.sub}</strong>
                   {service.description}
                   <br />
                 </p>
-              </>
+              </div>
             ))}
           {btn}
         </div>
@@ -68,14 +68,14 @@ function Services() {
           <div>
             {UI &&
               UI.map((service) => (
-                <>
+                <div key={service.id}>
                   <h3>{service.title}</h3>
                   <p>
                     <strong style={strongCSS}>{service.sub}</strong>
                     {service.description}
                     <br />
                   </p>
-                </>
+                </div>
               ))}
           </div>
           {btn}

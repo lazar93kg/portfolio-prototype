@@ -57,7 +57,6 @@
 .portImage img {
   width: 100%;
   opacity: 0.5s;
-  /*  height: 100%; */
   transition: 0.5s;
 }
 .portContent {

@@ -65,12 +65,7 @@ function Portfolio() {
                 <h3>{item.h3}</h3>
                 <p>{item.p}</p>
                 <a href={item.link}>
-                  <img
-                    src={item.icon}
-                    /*  width="800"
-                    height="45" */
-                    alt="project img"
-                  />
+                  <img src={item.icon} alt="project img" />
                 </a>
               </div>
             </div>

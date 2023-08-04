@@ -84,7 +84,6 @@
 .imgAbout p {
   color: var(--text-color);
   font-size: 0.6rem;
-  /*  font-weight: 600; */
 }
 
 /* ---------------------- keyframes ---------------------------------- */
@@ -131,8 +130,4 @@
     font-size: 1rem;
     padding: 10px;
   }
-  /* .infoAbout1 {
-    left: -5%;
-    top: 30%;
-  } */
 }

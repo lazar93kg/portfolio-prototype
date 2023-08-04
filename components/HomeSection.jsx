@@ -1,13 +1,10 @@
 "use client";
 import React from "react";
 import styles from "./homeSection.module.css";
-/* import Social from "../assets/linkedin.svg"; */
 import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
 import Image from "next/image";
-/* import img from "../assets/imageCV.png"; */
 import Liquid from "./Liquid";
-/* import CV from "../assets/LazarJevticCV.pdf"; */
 function HomeSection() {
   return (
     <section id="home" className={styles.home}>
