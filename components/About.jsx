@@ -44,8 +44,8 @@ function About() {
           having pursued formal education for two years in the field.
           <br />
           <br />
-          During my academic years, I immersed myself in a diverse array of
-          programming languages, from the essentials like{" "}
+          Throughout my academic years, I delved into a diverse array of
+          programming languages, ranging from the essentials like{" "}
           <strong style={strongCss}>HTML, CSS, and JavaScript</strong> to
           cutting-edge technologies such as{" "}
           <strong style={strongCss}>
@@ -57,10 +57,10 @@ function About() {
           <br />
           <br />
           Eager to put my knowledge into practice, I embarked on an enriching
-          internship at Devinova AB, where I truly honed my skills and evolved
-          as a developer. For more than seven months, I've had the incredible
-          opportunity to collaborate with talented professionals, working on
-          real-world projects that challenged and inspired me.
+          internship at Devinova AB, where I honed my skills and evolved as a
+          developer. Over seven months, I had the incredible opportunity to
+          collaborate with talented professionals, working on real-world
+          projects that both challenged and inspired me.
           <br />
           <br />
           During my time at Devinova AB, we leveraged an exciting tech stack,

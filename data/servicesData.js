@@ -4,7 +4,7 @@ export const fullStack = [
     id: "00001",
     sub: "Strapi: ",
     description:
-      "I build flexible and scalable backends using Strapi, an efficient headless CMS.",
+      "Building flexible and scalable back-ends using Strapi, an efficient headless CMS.",
   },
   {
     id: "00002",

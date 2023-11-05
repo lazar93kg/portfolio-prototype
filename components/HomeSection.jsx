@@ -12,7 +12,7 @@ function HomeSection() {
         <h1>Hello, I'm Lazar Jevtic</h1>
         <div className={styles.changeText}>
           <div className={styles.writer}>
-            <h3>And I'm passionate</h3>
+            <h3>Passionate</h3>
             <div className={styles.writerText}>
               <Typewriter
                 words={["Frontend Developer", "Web Developer"]}
@@ -26,9 +26,9 @@ function HomeSection() {
             </div>
           </div>
           <p>
-            I am dedicated to crafting captivating and user-friendly web
-            experiences. Join me on this exciting journey as we bring your
-            digital vision to life.
+            Dedicated to crafting captivating and user-friendly web experiences.
+            Join me on this exciting journey to bring your digital vision to
+            life.
           </p>
           <div className={styles.homeImage} id={styles.imgMobile}>
             <div className={styles.imgBox}>
